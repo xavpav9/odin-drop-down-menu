@@ -17,11 +17,11 @@ function createDropDown(name, items, menuIcon = null) {
   const itemsDiv = document.createElement("div");
   itemsDiv.classList.add("drop-down-items");
   for (const item of items) {
-    const itemDiv = document.createElement("div");
-    itemDiv.classList.add("drop-down-item");
-    itemDiv.textContent = item;
+    const itemBtn = document.createElement("button");
+    itemBtn.classList.add("drop-down-item");
+    itemBtn.textContent = item;
 
-    itemsDiv.appendChild(itemDiv);
+    itemsDiv.appendChild(itemBtn);
   }
   dropDownDiv.appendChild(itemsDiv);
 
