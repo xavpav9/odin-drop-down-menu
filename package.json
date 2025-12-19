@@ -1,12 +1,16 @@
 {
-  "name": "Basic Webpack Config",
+  "name": "drop-down-menu",
   "version": "1.0.0",
-  "description": "My configuration for Webpack",
+  "description": "A basic customisable JS drop down menu.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx webpack --config webpack.prod.js",
     "dev": "npx webpack serve --config webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xavpav9/odin-drop-down-menu"
   },
   "author": "Xavier Tondelier <xtondelier@gmail.com>",
   "license": "ISC",
