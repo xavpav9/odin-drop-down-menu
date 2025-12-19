@@ -1,4 +1,4 @@
-function createDropDown(name, items, menuIcon = null) {
+function createDropDown(name, items, width, menuIcon = null) {
   const dropDownDiv = document.createElement("div");
   dropDownDiv.classList.add("drop-down");
 
@@ -25,6 +25,14 @@ function createDropDown(name, items, menuIcon = null) {
   }
   dropDownDiv.appendChild(itemsDiv);
 
+  dropDownBtn.addEventListener("click", () => {
+    itemsDiv.classList.toggle("open");
+    dropDownDiv.classList.toggle("open");
+    const topOffset = getComputedStyle(dropDownBtn).height;
+    itemsDiv.style.top = topOffset;
+  });
+
+  dropDownDiv.style.width = width;
   return dropDownDiv;
 }
 
